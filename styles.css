@@ -1,0 +1,71 @@
+/* Tag = null, Class = ".", ID = "#" */
+body {
+    color: #0F141E;
+    background: #F1F1F1;
+}
+
+.container {
+    max-width: 1500px;
+    margin: auto;
+}
+
+.card {
+    border: 2px solid #0F141E;
+    font: 20px Arial;
+    border-radius: 10px;
+    background-color: azure;
+    padding: 15px;
+    margin-inline: 10px;
+    padding-bottom: 25px;
+}
+
+
+.avatar {
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    box-shadow: 4px 4px 14px rgba(0, 0, 0, 0.25);
+    float: left;
+    margin-left: 20px;
+    
+}
+
+.first_name {
+    font: 40px Arial;
+    margin-left: 250px;
+    position: relative;
+}
+
+.about {
+    font: 25px Arial;
+    margin-left: 250px;
+    margin-bottom: 80px;
+}
+
+.table {
+    border: 2px solid #3f3f40; 
+    width: 100px;
+}
+
+.label_name {
+    margin-top: 5px;
+    margin-left: 2px;
+    margin-bottom: 12px;
+}
+
+.card a, label{
+    margin-left: 5px;
+    margin-bottom: 10px;
+}
+
+.card textarea {
+    margin-left: 5px;
+    margin-top: 4px;
+}
+
+#button {
+    margin-left: 5px;
+    margin-top: 4px;
+    width: 100px;
+    height: 25px;
+}

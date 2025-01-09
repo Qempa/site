@@ -2,4 +2,4 @@
 
 ## Результат моей первой работы на HTML & CSS вы можете посмотреть тут
 
-#->[Работа](https://qempa.github.io/site/)<-
+->[Работа](https://qempa.github.io/site/)<-

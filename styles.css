@@ -4,10 +4,23 @@ body {
     background: #F1F1F1;
 }
 
+.header {
+    margin-top: 100px;
+}
+
 .container {
     max-width: 1500px;
     margin: auto;
 }
+
+a {
+    text-decoration: none;
+    color: #333
+}
+a:hover {
+    color: orange;
+}
+
 
 .card {
     border: 2px solid #0F141E;
@@ -19,6 +32,10 @@ body {
     padding-bottom: 25px;
 }
 
+.card ol, ul {
+    margin-top: 10px;
+    margin-bottom: 0
+}
 
 .avatar {
     width: 200px;
@@ -30,10 +47,12 @@ body {
     
 }
 
+
 .first_name {
     font: 40px Arial;
     margin-left: 250px;
     position: relative;
+
 }
 
 .about {
@@ -43,9 +62,20 @@ body {
 }
 
 .table {
-    border: 2px solid #3f3f40; 
-    width: 100px;
+    width: 100%;
+    background: #fff;
+    border-collapse: collapse;
 }
+
+.table th, td {
+    border: 2px solid #0F141E;
+}
+
+.table th:nth-child(even), td:nth-child(odd){
+    background: #eee;
+}
+
+
 
 .label_name {
     margin-top: 5px;
@@ -63,9 +93,121 @@ body {
     margin-top: 4px;
 }
 
-#button {
-    margin-left: 5px;
-    margin-top: 4px;
-    width: 100px;
-    height: 25px;
+.btn{
+    margin-left: 15px;
+    margin-right: 0px;
+    background: #111;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font: 20px Arial;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn:hover{
+    background: #333;
+}
+
+.navbar {
+    margin-bottom: 10px;
+    background: azure;
+    font: 20px Arial;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 100;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    display: flex;
+    padding: 0 20px;
+}
+
+.navbar ul li {
+    margin-right: 0px;
+    padding: 15px 10px 15px 10px;
+}
+
+.navbar ul li:hover {
+    background: rgb(227, 251, 251);
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.form h2 {
+    font: 30px Arial;
+    font-weight: bold;
+    margin-left: 15px
+}
+
+.form-group input, 
+.form-group textarea {
+    width: 98%;
+    box-sizing: border-box;
+    border: 1px solid #0F141E;
+    border-radius: 5px;
+    padding: 5px 10px 5px 5px;
+    margin-bottom: 10px;
+    margin-left: 15px;
+    font: 20px Arial;
+}
+
+.form-group label {
+    margin-left: 15px;
+    font: 20px Arial;
+    display: block;
+    margin-bottom: 0px;
+    font-weight: bold;
+}
+.form-row {
+    margin-bottom: 10px;
+    display: flex;
+}
+
+.form-row .form-group label{
+    margin: 10px;
+    margin-left: 15px;
+}
+
+.form-row .form-group {
+    margin-right: 20px;
+    width: 50%;
+}
+
+
+@media screen and (max-width: 500px) {
+    .avatar {
+        width: 250px;
+        height: 250px;
+        margin-left: 25%;
+        margin-right: 25%;
+        float: none;
+        position: static;
+        text-align: center;
+    }
+    
+
+    .first_name {
+        margin: 0px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        margin-left: 0px;
+    }
+
+    .about {
+        margin: 0px;
+        display: inline-block;
+        position: relative;
+        text-align: center;
+        margin-left: 0px;
+    }
 }
